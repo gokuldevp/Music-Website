@@ -1,0 +1,249 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.feature-img{
+    width: 100vw;
+    height: 85vh;
+    max-height: 85vh;
+}
+
+/* title */
+
+#title {
+    background-color:rgb(215, 233, 240);
+    padding: 0;
+    position: relative;
+}
+
+/* logo */
+#logo-img, .nav-toggler-btn{
+    width: 7.5rem;
+    height: 7.5rem;
+    /* border-radius: 50%; */
+    border: none;
+}
+
+.nav-text {
+    font-size: 1.5rem;
+}
+/* features */
+
+#features {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#features h3 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+/* Artists */
+/* #popular artists */
+
+.sub-section {
+    margin-top: 5vh;
+}
+
+
+#popular-artist-list {
+    width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: space-between;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center > div {
+    margin: 0 auto; /* Added to center the individual images */
+}
+  
+
+.popular-artists-image-dia {
+	background-size: cover;
+	height:300px;
+	width: 300px;
+	border:0px;
+	border-radius: 50%;
+}
+
+#popular-artists-image-1{
+	background-image: url(../images/art1.jpeg)
+
+}
+#popular-artists-image-2{
+	background-image: url(../images/art2.jpeg);
+}
+
+#popular-artists-image-3{
+	background-image: url(../images/art3.jpeg);
+}
+#popular-artists-image-4{
+	background-image: url(../images/art4.jpeg);
+}
+
+
+
+#popular-artists-text{
+	text-align: center;
+	margin-top: 40%;
+	color: wheat;
+	font-family: sans-serif;
+	font-weight: bold;
+    font-size: larger;
+}
+
+#popular-artists-text a{
+	text-decoration: none;
+	color: wheat;
+}
+
+.img-animate:hover {
+    box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+
+.hide {
+    display: none;
+}
+
+#popular-artists .img-animate:hover>.hide{
+	display: block;
+}
+
+
+/* youtube */
+.youtube-items {
+    width: 100%;
+    height: 300px;
+    max-width: 45vw;
+}
+
+
+.about-text {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 2rem;
+}
+
+#footer {
+    background-color: #fff;
+    padding: 3% 15% 0;
+}
+
+
+#footer p {
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: small;
+    font-style: italic;
+}
+
+.social {
+    margin: 3vw;
+    color: black;
+}
+
+
+@media (max-width: 1200px) {
+    /* navigation bar */
+    #logo-img, .nav-toggler-btn{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    /* artist */
+
+    .popular-artists-image-dia {
+        background-size: cover;
+        height:500px;
+        width: 500px;
+        border:0px;
+        border-radius: 50%;
+        
+    }
+
+    #popular-artist-list {
+        width: 80vw;
+        height: 1200px;
+    }
+
+    .about-text {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .feature-img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    #footer p {
+        font-size: 2rem;
+    }
+    }
+
+
+
+@media (max-width: 900px) {
+    /* navigation bar */
+    #logo-img, .nav-toggler-btn{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* artist */
+
+    .popular-artists-image-dia {
+        background-size: cover;
+        height:200px;
+        width: 200px;
+        border:0px;
+        border-radius: 50%;
+        
+    }
+
+    #popular-artist-list {
+        width: 80vw;
+        height: 500px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .feature-img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    #footer p {
+        font-size: small;
+    }
+    }
