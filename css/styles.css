@@ -70,6 +70,11 @@ h2 {
     margin-top: 5vh;
 }
 
+#artists {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
 
 #popular-artist-list {
     width: 90%;
@@ -313,6 +318,11 @@ h2 {
         height: 200px;
         line-height: 1.2;
     }
+
+    .contributor-img {
+        width: 150px;
+        border-radius: 100%;
+    }    
 
     .about-text {
         font-size: 14px;
