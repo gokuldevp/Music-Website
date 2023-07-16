@@ -9,40 +9,94 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/playlist.css">
 </head>
 
 <body>
-    <section id="title">
-    
-        <!-- Nav Bar -->
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img id="logo-img" src="images/favicon.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#feature">Feature</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#artists">Artists</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#youtube-videos">Songs</a>
-                </li>
-              </ul>
-            </div>
+  <section id="title">
+  
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nospace">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo-img" src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler nav-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-text">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feature">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#artists">Artists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#youtube-videos">Songs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+    <!-- <section id="artists" class="sub-section">
+      <div id="popular-artists" class="side-space">
+          <h2>siraj</h2>
+          <div id="popular-artist-list" class="container center">
+              <div id="popular-artists-image-1" class="popular-artists-image-dia img-animate">
+                  <div id="popular-artists-text" class="hide">
+                  </div>
+              </div>
           </div>
-        </nav>
-    </section>
+      </div>
+  </section> -->
+
+
+<main>
+  <!--Artist Template-->
+  <div id="artist-template">
+    <div id="artist-image">
+    </div>
+    <!--Artist Details
+  >--><div id="artist-details">
+          <!--Artist Title-->
+          <div id="artist-title">
+            <div>
+              <b>Siraj</b>
+              <br/>
+              <artist-type>Singer</artist-type>
+              </div>
+          </div>
+          <!--End of Artist Title-->
+          <!--Artist Intro-->
+          <div id="artist-intro">
+            Dileep began his career in the entertainment industry as a mimicry artist and later ventured into acting. He made his acting debut in 1991 with the film "Ennodu Ishtam Koodamo" but gained recognition through his role in the movie "Manathe Kottaram" (1994). Since then, he has acted in numerous Malayalam films and has established himself as one of the leading actors in the industry.
+          </div>
+
+          <div id="social">
+
+            <a class="social" href="https://youtube.com/@historianrecords8915" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social" href="https://instagram.com/historianrecords?igshid=Y2IzZGU1MTFhOQ==" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a class="social" href="https://www.facebook.com/HistorianRecords?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a class="social" href="https://twitter.com/Historian_Rec?t=a-hJpNyaSrBm60x05lg6pw&s=09" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a class="social" href="mailto:historian.records@gmail.com"><i class="fas fa-envelope" target="_blank"></i></a>
+        
+          </div>
+
+      </div>
+      <!--End of artist details-->
+
+  </div>
+
+
+
+
 
     <section id="youtube-videos">
         <div class="container-fluid">
@@ -84,5 +138,59 @@
       </div>
       </section>
 
+
+      <section id="youtube-videos">
+        <div class="container-fluid">
+          <h3>Youtube Songs</h3>
+          <p class="youtube-text">.</p>
+      
+          <!-- First row -->
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card text-center">
+                <div class="card-header">
+                  <p>Video 1</p>
+                </div>
+                <div class="card-body">
+                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Second row -->
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card text-center">
+                <div class="card-header">
+                  <p>Video 2</p>
+                </div>
+                <div class="card-body">
+                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Third row -->
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card text-center">
+                <div class="card-header">
+                  <p>Video 3</p>
+                </div>
+                <div class="card-body">
+                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </html>
