@@ -22,20 +22,27 @@ h1, h2, h3, h4, h5, h6 {
 
 #title {
     background-color:rgb(215, 233, 240);
-    padding: 0;
+    padding: 0px 0px;
     position: relative;
+    margin: 0px 0px;
+    border: 0px 0px;
 }
 
 /* logo */
 #logo-img, .nav-toggler-btn{
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 25px;
+    height: 42.5px;
     /* border-radius: 50%; */
     border: none;
 }
 
 .nav-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.nospace {
+    margin: 0 0;
+    padding: 0 0;
 }
 /* features */
 
@@ -43,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     position: relative;
     z-index: 1;
+    margin-top: 0px;
 }
 
 #features h3 {
@@ -127,6 +135,11 @@ h2 {
 	opacity: 0.8;
 }
 
+#about img {
+    width: 250px;
+    height: 38.5px;
+}
+
 .hide {
     display: none;
 }
@@ -135,6 +148,24 @@ h2 {
 	display: block;
 }
 
+/* contruters*/
+#contributor {
+    background-color: ghostwhite;
+    padding: 3% 15%;
+}
+
+.contributor-img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.contributor-profile {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+}
 
 /* youtube */
 .youtube-items {
@@ -172,9 +203,18 @@ h2 {
 
 @media (max-width: 1200px) {
     /* navigation bar */
-    #logo-img, .nav-toggler-btn{
-        width: 12rem;
-        height: 12rem;
+    #logo-img {
+        width: 52px;
+        height: 89px;
+    }
+
+    .nav-toggler-btn {
+        width: 100px;
+        height: 125px;
+    }
+
+    .nav-text {
+        font-size: 2rem;
     }
 
     /* artist */
@@ -191,6 +231,25 @@ h2 {
     #popular-artist-list {
         width: 80vw;
         height: 1200px;
+    }
+
+    .contributor-img {
+        width: 250px;
+        border-radius: 100%;
+    }    
+
+    .contributor-name {
+        font-size: 3rem;
+    }
+
+    .contributor-profile {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        font-size: 2.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        height: 320px;
     }
 
     .about-text {
@@ -212,10 +271,21 @@ h2 {
 
 @media (max-width: 900px) {
     /* navigation bar */
-    #logo-img, .nav-toggler-btn{
-        width: 4rem;
-        height: 4rem;
+    #logo-img {
+        width: 25px;
+        height: 42.5px;
     }
+
+    .nav-toggler-btn{
+        width: 40px;
+        height: 40px;
+        padding-right: 40px;
+    }
+
+    .nav-text {
+        font-size: 1rem;
+    }
+
 
     /* artist */
 
@@ -231,6 +301,17 @@ h2 {
     #popular-artist-list {
         width: 80vw;
         height: 500px;
+    }
+
+    .contributor-profile {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        height: 200px;
+        line-height: 1.2;
     }
 
     .about-text {
