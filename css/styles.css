@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-items {
     display: none;
     position: absolute;
-    top: 0vh;
+    top: 1vh;
     right: 5vw;
     padding: 10px;
     flex-direction: row;
@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 3px;
     background-color: #fff;
     margin: 5px 0;
+}
+
+.nav-link {
+    padding: 0 10px;
 }
 
 
@@ -335,6 +339,14 @@ h2 {
     #logo-img {
         width: 25px;
         height: 42.5px;
+    }
+
+    .navbar-items {
+        right: 4vw;
+    }
+
+    .nav-link {
+        padding: 0 5px;
     }
 
     .nav-text {
