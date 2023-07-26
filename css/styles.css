@@ -48,11 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-items {
     display: none;
     position: absolute;
-    top: 1vh;
+    top: 0vh;
     right: 5vw;
     padding: 10px;
     flex-direction: row;
     border: none;
+    transition: 1s;
 }
 
 .navbar-items.show {
