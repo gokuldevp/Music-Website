@@ -17,33 +17,33 @@
   <section id="title">
   
     <!-- Nav Bar -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nospace">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img id="logo-img" src="images/logo.png" alt="logo">
-        </a>
-        <button class="navbar-toggler nav-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav nav-text">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#feature">Feature</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#artists">Artists</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-          </ul>
-        </div>
+  <div id="navbar">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <img id="logo-img" src="images/logo.png" alt="logo">
+      </a>
+      <div class="navbar-toggle" onclick="toggleNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
       </div>
-    </nav>
+      <ul class="navbar-items" id="navbarItems">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feature">Feature</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#artists">Artists</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+  </nav>
+
+
+</div>
 
     <!-- Feature -->
     <div id="feature" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="hover">
@@ -160,6 +160,7 @@
 
 
 </body>
+<script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </html>
