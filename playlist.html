@@ -15,54 +15,36 @@
 </head>
 
 <body>
-  <section id="title">
-  
-    <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nospace">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"  target="_blank">
+    <div id="navbar">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
           <img id="logo-img" src="images/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler nav-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav nav-text">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#feature">Feature</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#artists">Artists</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#youtube-videos">Songs</a>
-            </li>
-          </ul>
+        <div class="navbar-toggle" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-      </div>
+        <ul class="navbar-items" id="navbarItems">
+          <li class="nav-item">
+            <a class="nav-link" href="#artist-template">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#youtube-videos">Songs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
     </nav>
-  </section>
-    <!-- <section id="artists" class="sub-section">
-      <div id="popular-artists" class="side-space">
-          <h2>siraj</h2>
-          <div id="popular-artist-list" class="container center">
-              <div id="popular-artists-image-1" class="popular-artists-image-dia img-animate">
-                  <div id="popular-artists-text" class="hide">
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section> -->
+    </div>
+
 
 
 <main>
   <!--Artist Template-->
   <div id="artist-template">
-    <div id="artist-image">
+    <div id="artist-image" class="card">
     </div>
     <!--Artist Details
   >--><div id="artist-details">
@@ -105,7 +87,7 @@
           <p class="youtube-text">.</p>
           <div class="row">
               <div class="col-lg-4 col-md-6">
-                  <div class="card text-center">
+                  <div class="card text-center space">
                       <div class="card-header">
                         <p>Video 1</p>
                       </div>
@@ -115,7 +97,7 @@
                   </div>
               </div>
               <div class="col-lg-4 col-md-6">
-                  <div class="card text-center">
+                  <div class="card text-center space">
                       <div class="card-header">
                         <p>Video 2</p>
                     
@@ -126,7 +108,7 @@
                   </div>
               </div>
               <div class="col-lg-4">
-                  <div class="card text-center">
+                  <div class="card text-center space">
                       <div class="card-header">
                         <p>Video 3</p>
                         </div>
@@ -136,9 +118,9 @@
                   </div>
               </div>
               <div class="col-lg-4">
-                <div class="card text-center">
+                <div class="card text-center space">
                     <div class="card-header">
-                      <p>Video 3</p>
+                      <p>Video 4</p>
                       </div>
                     <div class="card-body">
                       <iframe class="youtube-items" src="https://www.youtube.com/embed/TS2RdnnvEas" allowfullscreen></iframe>
@@ -149,55 +131,7 @@
       </div>
       </section>
 
-
-      <section id="youtube-videos">
-        <div class="container-fluid">
-          <h3>Youtube Songs</h3>
-          <p class="youtube-text">.</p>
-      
-          <!-- First row -->
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="card text-center">
-                <div class="card-header">
-                  <p>Video 1</p>
-                </div>
-                <div class="card-body">
-                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Second row -->
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="card text-center">
-                <div class="card-header">
-                  <p>Video 2</p>
-                </div>
-                <div class="card-body">
-                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Third row -->
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="card text-center">
-                <div class="card-header">
-                  <p>Video 3</p>
-                </div>
-                <div class="card-body">
-                  <iframe class="youtube-items" src="https://www.youtube.com/embed/jdoAa7-i880" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </main>
 
 
   <!-- Footer -->
@@ -219,5 +153,5 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+<script src="js/script.js"></script>
 </html>
