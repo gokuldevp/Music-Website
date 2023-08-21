@@ -78,6 +78,30 @@ h1, h2, h3, h4, h5, h6 {
     background-color: black;
 }
 
+.x-container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #D5F5FF;
+  }
+  
+  .x-forward,
+  .x-backward {
+    top: 12px;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: red;
+  }
+  
+  .x-forward {
+    transform: rotate(45deg);
+  }
+  
+  .x-backward {
+    transform: rotate(-45deg);
+  }
+
 .bar {
     width: 30px;
     height: 3px;
