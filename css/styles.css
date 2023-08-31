@@ -48,8 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-items {
     display: none;
     position: absolute;
-    top: 1vh;
-    right: 5vw;
+    top: .5vh;
+    right: 3vw;
     padding: 10px;
     flex-direction: row;
     border: none;
