@@ -53,12 +53,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     flex-direction: row;
     border: none;
-    transition: 1s;
 }
 
 .navbar-items.show {
     display: flex;
-    transition: 1s;
 }
 
 .navbar-items li {
@@ -229,12 +227,12 @@ h2 {
 .about {
     background-color: #281D44;
     color: wheat;
-    height: 30vh;
+    min-height: 30vh;
 }
 
 #about {
     background-color: #281D44;
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 
 #about img {
@@ -255,8 +253,8 @@ h2 {
     background-color: #B2D5F4;
     padding: 2vh 10vh;
     color: #00008B;
-    height: 50vh;
-    padding-top: 5vh;
+    min-height: 50vh;
+    padding-top: 3vh;
 }
 
 .contributor-img {
@@ -269,7 +267,7 @@ h2 {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
+    width: 50%;
 }
 
 /* youtube */
@@ -345,9 +343,13 @@ h2 {
     .contributor-profile {
         font-size: 1rem;
         width: 80%;
-        height: 200px;
+        height: 150px;
         line-height: 1.2;
-    }  
+    }
+
+    .about {
+        padding-top: 5vh;
+    }
 
     .about-text {
         font-size: 14px;
