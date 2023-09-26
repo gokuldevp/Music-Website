@@ -55,6 +55,10 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
+.nav-item {
+    display: none;
+}
+
 .navbar-items.show {
     display: flex;
 }
@@ -89,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: red;
+    background-color: black;
   }
   
   .x-forward {

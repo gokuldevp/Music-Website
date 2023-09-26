@@ -11,4 +11,12 @@ let toggleNav = () => {
     forwardX.classList.toggle('bar');
 
     navbarItems.classList.toggle('show');
+    let waittime = 0;
+    navbarItems.childNodes.forEach((item) => {
+        setTimeout(() => {
+            item.classList.toggle("show");
+            item.classList.toggle("nav-item");
+        },waittime);
+        waittime += 100;
+    });
 }
